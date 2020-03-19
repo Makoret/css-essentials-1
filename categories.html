@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="styles/categories.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      /* Your work here */
+      body {
+        font-family: Roboto;
+        background-color: #e5e5e5;
+      }
+      h2 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+      ul {
+        text-align: left;
+        list-style: none;
+        padding-left: 20px;
+      }
+      li {
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      li::before {
+        content: "\003E";
+        color: #666666;
+        padding-right: 10px;
+      }
+      hr {
+        width: 90%;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        color: #666666;
+      }
     </style>
     <title>Categories</title>
   </head>
@@ -15,11 +52,15 @@
       <section>
         <h2>Categories</h2>
         <ul>
-          <li>Fashion & Fitness</li>
-          <li>Influencers</li>
-          <li>Game Development</li>
-          <li>Photography</li>
-          <li>Music</li>
+          <li id="F&F">Fashion & Fitness</li>
+          <hr />
+          <li id="Inf">Influencers</li>
+          <hr />
+          <li id="GD">Game Development</li>
+          <hr />
+          <li id="Pho">Photography</li>
+          <hr />
+          <li id="Mus">Music</li>
         </ul>
       </section>
     </main>
